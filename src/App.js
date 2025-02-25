@@ -65,10 +65,12 @@ class App extends Component{
     const{tasks,newTask,editCondition,animation}=this.state;
     return(
       <div className="App">
-     
+       
        {animation ?<AnimatedClock/>: 
         
         <div>
+        
+        <h1>To-Do List</h1>
         
         <input value={newTask} onChange={this.handleText} type="text" placeholder="Write tasks"/>
         <button className={editCondition?"updateButton":"addButton"} onClick={this.addTask}>{editCondition?"Update":"Add"}</button>

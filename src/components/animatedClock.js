@@ -23,7 +23,7 @@ class AnimatedClock extends Component{
             <div className="clock-container">
              
             <div className="clock">
-            <h1>Todo List App</h1>
+           
               <div
                 className="hand hour-hand"
                 style={{ transform: `rotate(${hours * 30}deg)` }}
