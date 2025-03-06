@@ -61,7 +61,9 @@ class App extends Component{
       this.setState({tasks:updatedTasks},()=>localStorage.setItem("tasks",JSON.stringify(this.state.tasks)));
       
   }
-  render(){
+
+  
+render(){
     const{tasks,newTask,editCondition,animation}=this.state;
     return(
       <div className="App">
@@ -70,27 +72,37 @@ class App extends Component{
         
         <div>
         
-        <h1>To-Do List</h1>
+        <h1 className="title">To-Do List</h1>
         
         <input value={newTask} onChange={this.handleText} type="text" placeholder="Write tasks"/>
-        <button className={editCondition?"updateButton":"addButton"} onClick={this.addTask}>{editCondition?"Update":"Add"}</button>
+        <button type="button" className={editCondition?"updateButton":"addButton"} onClick={this.addTask}>{editCondition?"Update":"Add"}</button>
         <br/>
+
+        <div className="backgroundTodo">
       
         {
           tasks.map((each,i)=>{
-            return <div className={each.completed?"true":"false"} key={i}><p>{each.name}</p>
+            return <div className={each.completed?"true":"false"} key={i}><p className="eachItem">{each.name}</p>
             <button className="deleteButton" type="button" onClick={()=>this.deleteTask(i)}>Delete</button>
             &nbsp;<button className="editButton" type="button" onClick={()=>this.editTask(i)}>Edit</button>
             <input className="checkBox" type="checkbox" checked={each.completed} onChange={()=>this.completTask(i)} /></div>
           })
         }
+        </div>
 
         </div>
 
       }
       </div>
     )
-  }
+  
+
+  //}
+
+}
+
 }
 
 export default App;
+
+

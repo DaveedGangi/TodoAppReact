@@ -1,213 +1,223 @@
-.App {
-  text-align: center;
-  background:linear-gradient( to bottom, rgb(10, 22, 53), rgb(155, 222, 111));
-  min-height: 100vh;
-  
-}
-
-
-
-
-
-
-
-.true{
-  color: green;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightblue;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: wavy;
-}
-.false{
-  color: red;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightcoral;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-.deleteButton{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightgrey;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-
-
-.deleteButton:hover {
-  background-color: darkgrey;
-}
-.editButton{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightgreen;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.editButton:hover {
-  background-color: darkgreen;
-}
-.checkBox{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightgrey;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-  width:28px;
-  height:20px;
-}
-
-.checkBox:hover {
-  background-color: darkgrey;
-}
-
-.addButton{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightblue;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.addButton:hover {
-  background-color: darkblue;
-}
-.updateButton{
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: lightgreen;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.updateButton:hover {
-  background-color: darkgreen;
-}
-input{
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.App {
-  text-align: center;
-  background: linear-gradient(to right, #ff758c, #ff7eb3);
-  min-height: 100vh;
-  background-size: cover;
-  padding-top:20px;
+body,html{
   margin:0px;
   padding:0px;
 }
 
-h1{
-  margin-top:0px;
-  padding:24px 0px 0px 0px;
-  font-size:40px;
-  font-weight:bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+.App{
+  background-image:linear-gradient(to bottom, black,blue);
+  min-height:100vh;
+  height:auto;
+  background-size:cover;
+  margin:0px;
+  padding:0px;
+  text-align: center;
+  margin:auto;
+
+
+}
+.title{
+  color:white;
   text-align:center;
+  margin:0px;
+  padding:0px;
+  padding-bottom:17px;
+  padding-top:15px;
+}
+
+
+input{
+  padding:10px;
+  margin:10px;
+  width:200px;
+  border-radius:5px;
+  border:none;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  transition: background-color 0.3s ease;
+  background-color: white;
+
+
+}
+
+.addButton{
+  padding:10px 20px;
+  margin:10px;
+  border-radius:5px;
+  border:none;
+  background-color: blue;
+  color:white;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: rgba(0,0,255,0.8);
+  }
+  &:active{
+    background-color: rgba(0,0,255,0.7);
+  }
+}
+.updateButton{
+  padding:10px 20px;
+  margin:10px;
+  border-radius:5px;
+  border:none;
+  background-color: green;
+  color:white;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
  
+}
 
-
-
+.addButton:hover{
+  background-color: rgba(0,0,255,0.9);
+  border:1px solid blue;
+  color:black;
+  transition: background-color 0.3s ease, border 0.3s ease;
   
-  color:#06d6a0;
 }
-.true {
-  color: white;
+
+.updateButton:hover{
+  background-color: rgba(0,255,0,0.9);
+  border:1px solid green;
+  color:black;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.eachItem{
  
-  background-color:rgba(11, 11, 6, 0.5);
-}
-
-.false {
-  color: white;
+  padding:12px;
+  margin:8px;
  
-  background-color:rgb(154, 128, 179);
+  overflow:auto;
+
 }
 
-.deleteButton {
-  background-color: #ffb703;
+.true{
+  color:rgb(30, 21, 108);
+  font-weight:bold;
+  transition: color 0.3s ease;
+  background-color: rgb(82, 156, 222);
+  width:80vw;
+  padding:12px;
+  margin:8px;
+  overflow: auto;
+  font-size: large;
+  
+}
+.false{
+  color:rgb(176, 214, 237);
+  font-weight:bold;
+  transition: color 0.3s ease;
+  background-color: rgb(52, 94, 94);
+  width:80vw;
+  padding:12px;
+  margin:8px;
+  overflow: auto;
+  font-size: large;
+  background-color:coral;
+ 
+  
 }
 
-.deleteButton:hover {
-  background-color: #ffafcc;
+.false:hover{
+
+  transition: color 0.3s ease;
+
+
+}
+.true:hover{
+  
+  transition: color 0.3s ease;
 }
 
-.editButton {
-  background-color: #06d6a0;
+.backgroundTodo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  padding:10px;
+  border-radius:5px;
+  
+ 
+  
 }
 
-.editButton:hover {
-  background-color: #118ab2;
+.editButton{
+  padding:10px 20px;
+  margin:10px;
+  border-radius:5px;
+  border:none;
+  background-color: rgb(138, 138, 96);
+  color:white;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: rgba(151, 151, 46, 0.8);
+  }
+  &:active{
+    background-color: rgba(199, 199, 145, 0.7);
+  }
 }
 
-.addButton {
-  background-color: #49198c;
-  color:#06d6a0;
+.deleteButton{
+  padding:10px 20px;
+  margin:10px;
+  border-radius:5px;
+  border:none;
+  background-color: red;
+  color:white;
+  cursor:pointer;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: rgba(255,0,0,0.8);
+  }
+  &:active{
+    background-color: rgba(255,0,0,0.7);
+  }
 }
 
-.addButton:hover {
-  background-color: #3a86ff;
+.checkBox{
+  
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+  &:checked{
+    background-color: rgba(0,255,0,0.5);
+  }
+  &:hover{
+    background-color: rgba(195, 171, 15, 0.7);
+  }
+  &:active{
+    background-color: rgba(0,255,0,0.6);
+  }
+  &:focus{
+    outline: none;
+  }
+  cursor:pointer;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(118, 118, 130);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
 }
 
+.checkBox:checked {
+  background-color: blue;
+  border: 2px solid blue;
+}
 
+.checkBox:checked::after {
+  content: "✔"; /* Checkmark symbol */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
-
-
-
-
-
+.backgroundTodo{
+  padding-top:17px;
+}
